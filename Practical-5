@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Triangle {
+    void area(double a, double b, double c) {
+        if (a + b > c && a + c > b && b + c > a) {
+            double s = (a + b + c) / 2;
+            double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+            System.out.printf("%.2f", area);
+        } else {
+            System.out.println("Invalid triangle");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        Triangle obj = new Triangle();
+        obj.area(a, b, c);
+    }
+}
