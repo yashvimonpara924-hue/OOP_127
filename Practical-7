@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Employee {
+    private String employeeName;
+    private double employeeSalary;
+
+    void readEmployeeData() {
+        Scanner sc = new Scanner(System.in);
+        employeeName = sc.nextLine();
+        employeeSalary = sc.nextDouble();
+    }
+
+    void displayEmployeeData() {
+        System.out.println(employeeName);
+        System.out.println(employeeSalary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee obj = new Employee();
+        obj.readEmployeeData();
+        obj.displayEmployeeData();
+    }
+}
