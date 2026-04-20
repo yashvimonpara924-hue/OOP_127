@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class DistanceConverter {
+    double convert(double meters) {
+        return meters * 3.28084;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double meters = sc.nextDouble();
+        DistanceConverter obj = new DistanceConverter();
+        double feet = obj.convert(meters);
+        System.out.printf("%.2f", feet);
+    }
+}
