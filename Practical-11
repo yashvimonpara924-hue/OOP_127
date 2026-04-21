@@ -1,0 +1,141 @@
+import java.util.Scanner;
+
+class College {
+    String collegeName;
+
+    College(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    class Admission {
+        String studentName;
+        String course;
+
+        void read() {
+            Scanner sc = new Scanner(System.in);
+            studentName = sc.nextLine();
+            course = sc.nextLine();
+        }
+
+        void display() {
+            System.out.println(collegeName);
+            System.out.println(studentName);
+            System.out.println(course);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        College c = new College("SSASIT");
+        College.Admission a = c.new Admission();
+
+        a.read();
+        a.display();
+    }
+}import java.util.Scanner;
+
+class College {
+    String collegeName;
+
+    College(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    class Admission {
+        String studentName;
+        String course;
+
+        void read() {
+            Scanner sc = new Scanner(System.in);
+            studentName = sc.nextLine();
+            course = sc.nextLine();
+        }
+
+        void display() {
+            System.out.println(collegeName);
+            System.out.println(studentName);
+            System.out.println(course);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        College c = new College("SSASIT");
+        College.Admission a = c.new Admission();
+
+        a.read();
+        a.display();
+    }
+}import java.util.Scanner;
+
+class College {
+    String collegeName;
+
+    College(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    class Admission {
+        String studentName;
+        String course;
+
+        void read() {
+            Scanner sc = new Scanner(System.in);
+            studentName = sc.nextLine();
+            course = sc.nextLine();
+        }
+
+        void display() {
+            System.out.println(collegeName);
+            System.out.println(studentName);
+            System.out.println(course);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        College c = new College("SSASIT");
+        College.Admission a = c.new Admission();
+
+        a.read();
+        a.display();
+    }
+}import java.util.Scanner;
+
+class College {
+    String collegeName;
+
+    College(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    class Admission {
+        String studentName;
+        String course;
+
+        void read() {
+            Scanner sc = new Scanner(System.in);
+            studentName = sc.nextLine();
+            course = sc.nextLine();
+        }
+
+        void display() {
+            System.out.println(collegeName);
+            System.out.println(studentName);
+            System.out.println(course);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        College c = new College("SSASIT");
+        College.Admission a = c.new Admission();
+
+        a.read();
+        a.display();
+    }
+}
