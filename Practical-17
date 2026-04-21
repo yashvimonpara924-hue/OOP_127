@@ -1,0 +1,36 @@
+class Result implements Exam, Classify {
+    public boolean isPassed(int mark) {
+        return mark >= 35;
+    }
+
+    public String getDivision(double average) {
+        if (average >= 60)
+            return "First Division";
+        else if (average >= 50)
+            return "Second Division";
+        else if (average >= 35)
+            return "Third Division";
+        else
+            return "Fail";
+    }
+}
+
+interface Exam {
+    boolean isPassed(int mark);
+}
+
+interface Classify {
+    String getDivision(double average);
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Result r = new Result();
+
+        int mark = 70;
+        double avg = 65;
+
+        System.out.println(r.isPassed(mark));
+        System.out.println(r.getDivision(avg));
+    }
+}
